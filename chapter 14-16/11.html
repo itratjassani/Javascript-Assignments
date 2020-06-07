@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+<h1>LIFO</h1>
+
+<button onclick="myfunc()">Try it</button>
+
+<p id="myArr"></p>
+
+<script>
+var computer =["Keyboard", "mouse","printer", "monitor"];
+document.getElementById("myArr").innerHTML = computer;
+
+function myfunc(){
+  computer.pop();
+  document.getElementById("myArr").innerHTML = computer;
+}
+</script>
+</body>
+</html>

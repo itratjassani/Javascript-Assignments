@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+<select id="selectNumber">
+    <option>Choose Brand</option>
+</select>
+<script type="text/javascript">
+	var select = document.getElementById("selectNumber");
+var options = ["Apple", "Samsung", "Motorola", "Nokia", "Sony","Haier"];
+for(var i = 0; i < options.length; i++) {
+    var opt = options[i];
+    var el = document.createElement("option");
+    el.textContent = opt;
+    el.value = opt;
+    select.appendChild(el);
+}
+</script>
+</body>
+</html>
