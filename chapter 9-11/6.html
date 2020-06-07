@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+</head>
+<body>
+<h1>Marksheet</h1>
+<script type="text/javascript">
+var subject1 = parseInt(prompt("Enter Marks of subject 1"))
+var subject2 = parseInt(prompt("Enter Marks of subject 2"))
+var subject3 = parseInt(prompt("Enter Marks of subject 3"))
+var total=300
+var obtained =subject1+subject2+subject3
+var Percentage = obtained/total*100
+var grade,remarks
+if (Percentage>=80) 
+{
+	grade="A-one"
+	remarks="Excellent"
+}
+else if(Percentage>=70)
+{
+	grade="A"
+	remarks="Good"
+}
+else if(Percentage>=60)
+{
+	grade="B"
+	remarks="You need to improve"
+}
+else
+{
+	grade="fail"
+	remarks="sorry"
+}
+document.write("Total Marks: "+total+"<br>")
+document.write("Marks Obtained: "+obtained+"<br>")
+document.write("Percentage: "+Percentage+"<br>")
+document.write("Grade: "+grade+"<br>")
+document.write("Remarks: "+remarks+"<br>")
+</script>
+</body>
+</html>
